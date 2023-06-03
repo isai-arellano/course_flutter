@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/presentation/screens/screens.dart';
+import 'package:widgets_app/presentation/screens/snackbar/snackbar_screen.dart';
 
 final appRouter = GoRouter(initialLocation: '/', routes: [
   GoRoute(
@@ -17,5 +18,9 @@ final appRouter = GoRouter(initialLocation: '/', routes: [
   GoRoute(
       path: '/progress-indicators',
       name: ProgressScreen.name,
-      builder: (context, state) => const ProgressScreen())
+      builder: (context, state) => const ProgressScreen()),
+  GoRoute(
+      path: '/snackbars',
+      name: SnackBarScreen.name,
+      builder: (context, state) => const SnackBarScreen())
 ]);
